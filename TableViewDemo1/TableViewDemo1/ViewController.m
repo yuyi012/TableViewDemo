@@ -101,12 +101,12 @@
     BOOL open = [[groupDic objectForKey:@"open"]boolValue];
     NSInteger numberOfRows;
     //判断展开状态,如果展开则显示组员
-//    if (open) {
+    if (open) {
         NSArray *memberList = [groupDic objectForKey:@"memberList"];
         numberOfRows = memberList.count;
-//    }else {
-//        numberOfRows = 0;
-//    }
+    }else {
+        numberOfRows = 0;
+    }
     return numberOfRows;
 }
 
